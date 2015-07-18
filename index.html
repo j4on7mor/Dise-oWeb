@@ -2,9 +2,10 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<meta description="Proyecto de Diseño Web Online" />
-
+	<meta name="description" content="Proyecto de Diseño Web Online" />
 	<title>Document</title>
+	<link rel="stylesheet" href="normalize.css" />
+	<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 	<header>
@@ -17,17 +18,17 @@
 		<figure id="avatar">
 			<img src="images/avatar.png" />
 		</figure>
-		<nav>
-			<ul>
-				<li><a href="#">Python</a></li>
-				<li><a href="#">HTML5</a></li>
-				<li><a href="#">Javasript</a></li>
-				<li><a href="#">CSS3</a></li>
-				<li><a href="#">Django</a></li>
-				<li id="publicar_nav"><a href="#">Publicar</a></li>
+		</header>
+	<nav>
+		<ul>
+			<li><a href="#">Python</a></li>
+			<li><a href="#">HTML5</a></li>
+			<li><a href="#">Javasript</a></li>
+			<li><a href="#">CSS3</a></li>
+			<li><a href="#">Django</a></li>
+			<li id="publicar_nav"><a href="#">Publicar</a></li>
 			</ul>
-		</nav>
-	</header>
+	</nav>
 	<section id="contenido">
 		<article class="item"> <!--id=#contenido y class=.item para llamar de css. id objeto de html y class atributo de css para colocar un diseño heredable-->
 			<figure class="imagen_item">
@@ -46,17 +47,16 @@
 				<span class="fecha_item">
 					hace <strong>5</strong> min
 				</span>
-				<a href="#" class="comentarios_item">99</a>
-				<a href="#" class="guardar_item">Pony</a>
 			</div>
 			<div class="votacion">
 				<a href="#" class="up">
 					720
 				</a>
 				<a href="#" class="down">
-					510
+				<a href="#" class="comentarios_item">99</a>
+				<a href="#" class="guardar_item">Pony</a>
 				</a>
-			</div>
+			</div> 
 		</article>
 		<article class="item"> 
 			<figure class="imagen_item">
@@ -75,15 +75,13 @@
 				<span class="fecha_item">
 					hace <strong>5</strong> min
 				</span>
-				<a href="#" class="comentarios_item">99</a>
-				<a href="#" class="guardar_item">Pony</a>
-			</div>
 			<div class="votacion">
 				<a href="#" class="up">
 					720
 				</a>
 				<a href="#" class="down">
-					510
+				<a href="#" class="comentarios_item">99</a>
+				<a href="#" class="guardar_item">Pony</a>
 				</a>
 			</div>
 		</article>
@@ -104,16 +102,15 @@
 				<span class="fecha_item">
 					hace <strong>5</strong> min
 				</span>
-				<a href="#" class="comentarios_item">99</a>
-				<a href="#" class="guardar_item">Pony</a>
 			</div>
 			<div class="votacion">
 				<a href="#" class="up">
 					720
 				</a>
 				<a href="#" class="down">
-					510
 				</a>
+				<a href="#" class="comentarios_item">99</a>
+				<a href="#" class="guardar_item">Pony</a>
 			</div>
 		</article>
 	</section>
