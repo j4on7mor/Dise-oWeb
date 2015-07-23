@@ -33,7 +33,7 @@
 	line-height: 1;
 
 	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
@@ -140,11 +140,11 @@ header #logo img
 	padding: 0;	
 	padding-right: 0.5em;
 	width: 52px;
-	-webkit-transition: 2s;
+	transition: 2s;
 }
 header #logo img:hover
 {
-	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
 }
 nav
 {
@@ -203,7 +203,8 @@ nav ul li a
 	color: white;
 	display: block;
 	padding: 0.5em;
-	-webkit-transition: 0.6s;
+	text-decoration: none;
+	transition: 0.6s;
 
 }
 nav ul li a:hover
@@ -303,4 +304,32 @@ nav ul li a:hover
 	{
 		margin-right: 2%;
 	}
+}
+ 
+
+
+
+/*
+ * FORMULARIO
+ *
+ * NO ES RECOMENDABLE USAR ID PARA LOS SELECTORES EN FORMULARIOS
+ */
+
+.formulario{
+	display: none;
+	padding: 1em;
+	text-align: right;
+}
+.formulario input{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 0.2em 0.6em;
+}
+.formulario input[type="submit"]{
+	background: #22BCE0;
+	border-color: #22BCE0;
+ 	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+ 	color: white;
+	font-style: italic;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
 }

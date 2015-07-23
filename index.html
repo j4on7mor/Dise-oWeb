@@ -8,6 +8,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="normalize.css" />
 	<link rel="stylesheet" href="estilos.css">
+	<script src="prefixfree.js"></script>
 </head>
 <body>
 	<header>
@@ -28,9 +29,16 @@
 			<li><a href="#">Javasript</a></li>
 			<li><a href="#">CSS3</a></li>
 			<li><a href="#">Django</a></li>
-			<li id="publicar_nav"><a href="#" class="icon-pencil">Publicar</a></li>
+			<li id="publicar_nav"><a href="#" class="icon-pencil" id="mostrar-form">Publicar</a></li>
 			</ul>
 	</nav>
+	<form action="" id="formulario" class="formulario"/>
+	<!--<label for="titulo">Título:</label> una forma de agregar nombre al imput-->
+		<input type="text" id="titulo" placeholder="Título" required/>
+		<!--<label for="url">url:</label>-->
+		<input type="url" id="url" placeholder="Enlace Web" required/>
+		<input type="submit" value="Agregar"/>
+	</form>
 	<!--<video width="320" height="240" controls>
   		<source src="movie.mp4" type="video/mp4">
   		<source src="movie.ogg" type="video/ogg">
@@ -190,5 +198,7 @@
 			DiseñoWeb 2014
 		</p>
 	</footer>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="formulario.js"></script>
 </body>
 </html>
